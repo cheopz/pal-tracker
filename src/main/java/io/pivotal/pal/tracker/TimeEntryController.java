@@ -48,7 +48,7 @@ public class TimeEntryController {
         if (updatedTimeEntry == null)
             response = new ResponseEntity(HttpStatus.NOT_FOUND);
         else
-            response = new ResponseEntity(timeEntry, HttpStatus.OK);
+            response = new ResponseEntity(updatedTimeEntry, HttpStatus.OK);
 
         return response;
     }
